@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Advertisements xmlns="http://schemas.microsoft.com/AspNet/AdRotator-Schedule-File">
+  <Ad>
+    <ImageUrl>~/images/champ.png</ImageUrl>
+    <AlternateText>Champ</AlternateText>
+    <Impressions>100</Impressions>
+  </Ad>
+  <Ad>
+    <ImageUrl>~/images/logo.png</ImageUrl>
+    <AlternateText>logo</AlternateText>
+    <Impressions>50</Impressions>
+  </Ad>
+<Ad>
+    <ImageUrl>~/images/maple.png</ImageUrl>
+    <AlternateText>maple</AlternateText>
+    <Impressions>150</Impressions>
+  </Ad>
+</Advertisements>

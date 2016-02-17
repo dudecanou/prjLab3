@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="pmExercice1.master.cs" Inherits="prjLab3Ex1.Master_pages.pmExercice1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../styles/styleEx1.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon"  href="../images/vader.ico" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       <div class="entete">
+        <a href="../Default.aspx">
+           <asp:Image ID="Image1" runat="server" ImageUrl="~/images/mtl.png"  CssClass="image" />
+        </a>
+
+       </div>
+   <div class="leftColumn">
+       <p>MENU</p>
+       <asp:Menu ID="MenuMaster" runat="server" CssClass="menu">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/Content_pages/contentPage1.aspx" Text="Stationnement" Value="Stationnement"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Content_pages/contentPage2.aspx" Text="Inscription" Value="Inscription"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Content_pages/contentPage3.aspx" Text="Calendrier" Value="Calendrier"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+
+   </div>
+    <div class="principale">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    
+    <div class="piedDePage">
+        <asp:Label Text="sircusmtl@gmail.com   " CssClass="txtPiedPage" runat="server" />
+    </div>
+    </div>
+    </form>
+</body>
+</html>
